@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="box">
+        <h1>Generate a</h1>
+        <h2>random password</h2>
+        <h3>Use a secure password and keep your accounts safe</h3>
+        <div class="length-container">
+            <h4>Set password length: </h4>
+            <input type="range" min="6" max="16" value="11" class="slider-length" id="myRange">
+            <h4><span id="output-el"></span></h4>
+        </div>
+        <div class="toggle-container">
+            <h4>Use numbers only</h4>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider-toggle"></span>
+            </label>
+        </div>
+        <button id="generate-btn" onclick="generatePassword()">Generate passwords</button>
+        <div class="password-section">
+            <p id="passwordOne-el"></p>
+            <p id="passwordTwo-el"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
